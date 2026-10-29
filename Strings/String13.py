@@ -1,0 +1,15 @@
+#Find the shortest word in a sentence.
+
+s = input("Enter a sentence: ")
+words = s.split()
+
+if words:
+    shortest = words[0]
+
+    for word in words:
+        if len(word) < len(shortest):
+            shortest = word
+
+    print("Shortest word =", shortest)
+else:
+    print("No words found")
